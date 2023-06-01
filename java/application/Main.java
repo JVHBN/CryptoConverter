@@ -1,5 +1,13 @@
 package application;
 
-public class Main {
-
+ public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+    }
+    
+    @Configuration
+    @EnableAutoConfiguration
+    @ComponentScan("Controller")
+    public static class AppConfig {
+        
+    }
 }
